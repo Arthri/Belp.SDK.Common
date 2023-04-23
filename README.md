@@ -31,7 +31,7 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 ### Building (with Visual Studio)
 1. Open `Belp.SDK.Common.sln`.
 1. Open the Solution Explorer.
-1. Right click on the project `Belp.SDK.Common.sln` in the Solution Explorer.
+1. Right click on the project `Belp.SDK.Common` in the Solution Explorer.
 1. Click on `Pack`.
 
 ### Building (with .NET CLI)
@@ -39,4 +39,4 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 1. Run `dotnet pack`
 
 ### Output
-The output is located in `src/Belp.SDK.Common/bin/<CONFIGURATION>`.
+The output is located in `src/Belp.SDK.Common/Belp.SDK.Common/bin/<CONFIGURATION>`.
