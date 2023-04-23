@@ -1,0 +1,16 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Outputs the package path for CI to use -->
+
+  <!-- Export PACKAGE_OUTPUT_PATH for CI to use -->
+  <Target Name="_EXPORT_PACKAGE_OUTPUT_PATH" AfterTargets="Pack" Condition="'$(BELP_OUTPUT_PACKAGE_TO_CI)' == 'true'">
+    <Error Text="%24%28GITHUB_OUTPUT%29 is undefined" Condition="'$(GITHUB_OUTPUT)' == ''" />
+    <WriteLinesToFile File="$(GITHUB_OUTPUT)" Lines="PACKAGE_OUTPUT_PATH=$(PackageOutputAbsolutePath)" />
+  </Target>
+
+  <!-- Prevent BELP_OUTPUT_PACKAGE_TO_CI from propagating to project references -->
+  <ItemGroup>
+    <ProjectReference Update="@(ProjectReference)" UndefineProperties="%(ProjectReference.UndefineProperties);BELP_OUTPUT_PACKAGE_TO_CI" />
+  </ItemGroup>
+
+</Project>
