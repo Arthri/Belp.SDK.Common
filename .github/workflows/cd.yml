@@ -27,7 +27,7 @@ jobs:
 
       - name: Build & Pack Project
         id: build
-        run: dotnet pack -warnaserror -c Release -p:BELP_OUTPUT_PACKAGE_TO_CI=true
+        run: dotnet pack -warnaserror -c Release -p:BELP_EXPOSE_CI_VARIABLES=true
 
       - name: Publish Package
         env:
