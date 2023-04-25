@@ -13,7 +13,9 @@ defaults:
 
 jobs:
   release_nuget:
-    environment: Release (NuGet)
+    environment:
+      name: Release (NuGet)
+      url: ${{ steps.build.outputs.PACKAGE_VERSION_URL }}
 
     runs-on: ubuntu-22.04
     timeout-minutes: 2
