@@ -1,11 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <!-- Build Configuration -->
-  <PropertyGroup>
-    <NoBuild>true</NoBuild>
-
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+<Project Sdk="Belp.SDK.PackOnly/0.1.0">
 
   <ItemGroup>
     <None Include="Assets\**\*" Pack="true" PackagePath="/" />
