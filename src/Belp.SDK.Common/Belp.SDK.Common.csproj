@@ -1,5 +1,6 @@
 <Project Sdk="Belp.SDK.PackOnly/0.1.0">
 
+  <!-- Package Assets Configuration -->
   <ItemGroup>
     <None Include="Assets\**\*" Pack="true" PackagePath="/" />
   </ItemGroup>
