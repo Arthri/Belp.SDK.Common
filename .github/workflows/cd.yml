@@ -7,31 +7,6 @@ on:
 
   workflow_dispatch:
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
-  release_nuget:
-    environment:
-      name: Release (NuGet)
-      url: ${{ steps.build.outputs.PACKAGE_VERSION_URL }}
-
-    runs-on: ubuntu-22.04
-    timeout-minutes: 2
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-
-      - name: Build & Pack Project
-        id: build
-        run: dotnet pack -warnaserror -c Release -p:BELP_EXPOSE_CI_VARIABLES=true
-
-      - name: Publish Package
-        env:
-          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-        run: dotnet nuget push ${{ steps.build.outputs.PACKAGE_OUTPUT_PATH }}*.nupkg -k "$NUGET_API_KEY" -s "https://api.nuget.org/v3/index.json"
+  deploy:
+    uses: Arthri/belp-deploy-nuget/.github/workflows/deploy/nuget.yml@v1
