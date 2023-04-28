@@ -9,4 +9,4 @@ on:
 
 jobs:
   deploy:
-    uses: Arthri/belp-deploy-nuget/.github/workflows/nuget.yml@v1
+    uses: Arthri/belp-deploy-nuget/.github/workflows/deploy.yml@v1
