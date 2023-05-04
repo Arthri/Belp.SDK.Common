@@ -7,4 +7,4 @@ on:
 
 jobs:
   deploy:
-    uses: Arthri/deploy-nuget/.github/workflows/deploy.yml@v1
+    uses: Arthri/deploy_nuget/.github/workflows/deploy.yml@v1
