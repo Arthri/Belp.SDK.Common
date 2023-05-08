@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - release/nuget
+  release:
+    types:
+      - published
 
 jobs:
   deploy:
