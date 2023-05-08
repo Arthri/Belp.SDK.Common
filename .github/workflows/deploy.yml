@@ -8,3 +8,6 @@ on:
 jobs:
   deploy:
     uses: Arthri/deploy_nuget/.github/workflows/deploy.yml@v1
+    with:
+      changelog: ${{ github.event.release.body }}
+      version: ${{ github.event.release.tag_name }}
