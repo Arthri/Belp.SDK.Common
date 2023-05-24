@@ -25,7 +25,7 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 
 ## Development
 
-### Prequisites
+### Prerequisites
 - Install .NET 7.0 SDK version 7.0.100 or newer.
 
 ### Building (with Visual Studio)
