@@ -1,4 +1,4 @@
-<Project Sdk="Belp.SDK.PackOnly/0.2.0">
+<Project Sdk="Belp.SDK.PackOnly/0.1.0">
 
   <!-- Package Information -->
   <PropertyGroup>
