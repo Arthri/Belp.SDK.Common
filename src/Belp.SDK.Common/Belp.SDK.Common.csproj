@@ -1,9 +1,5 @@
 <Project Sdk="Belp.SDK.PackOnly/0.1.0">
 
-  <Import Project="Assets/Sdk/Sdk.props" />
-
-
-
   <!-- Package Information -->
   <PropertyGroup>
     <Authors>Arthri</Authors>
@@ -17,15 +13,14 @@
     <Product>Belp</Product>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <Title>Belp Common SDK</Title>
-    <Version>0.1.0.0</Version>
   </PropertyGroup>
 
 
 
   <!-- Package Assets Configuration -->
   <ItemGroup>
-    <None Include="Assets\**\*" Pack="true" PackagePath="/" />
-    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <None Include="Assets\**\*" Pack="true" PackagePath="\" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 
@@ -37,9 +32,5 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
-
-
-  <Import Project="Assets/Sdk/Sdk.targets" />
 
 </Project>

@@ -14,6 +14,9 @@ It is not recommended to install Belp.SDK.Common directly.
 
 ## Usage
 
+### Import SDK
+`Belp.SDK.Common` is additive and functions in conjunction with another SDK, such as `Microsoft.NET.Sdk`. It is recommended to import `Belp.SDK.Common`'s `Sdk.props` before any others, and import its `Sdk.targets` after all others.
+
 ### Test NuGet package locally
 - Run `dotnet pack` with the `-p:DevelopmentNuGet=true` argument.
 - Export or set the environment variable `DevelopmentNuGet` to true.
@@ -25,7 +28,7 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 
 ## Development
 
-### Prequisites
+### Prerequisites
 - Install .NET 7.0 SDK version 7.0.100 or newer.
 
 ### Building (with Visual Studio)
