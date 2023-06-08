@@ -10,7 +10,7 @@ It is not recommended to install Belp.SDK.Common directly.
 ### Install using an Editor
 1. Locate the project file(for example, `Project.csproj`, `Project.fsproj`).
 1. Open the project file in an editor.
-1. Add the [`<Sdk Name="Belp.SDK.Common" Version="<VERSION>" />`](https://learn.microsoft.com/en-us/visualstudio/msbuild/sdk-element-msbuild) element under the root `<Project>` element.
+1. Add a new `Sdk` element under the root `Project` element with the `Name` attribute set to `Belp.SDK.Common` and the `Version` attribute set to `1.0.0`. For example, `<Sdk Name="Belp.SDK.Common" Version="1.0.0" />`.
 
 ## Usage
 
