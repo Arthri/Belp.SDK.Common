@@ -7,7 +7,7 @@ It is not recommended to install Belp.SDK.Common directly.
 ### Requirements
 - A project written in SDK-style. This includes any project for .NET Core(or newer) or .NET 5(or newer).
 
-### Install in Project Manually
+### Install using an Editor
 1. Locate the project file(for example, `Project.csproj`, `Project.fsproj`).
 1. Open the project file in an editor.
 1. Add the [`<Sdk Name="Belp.SDK.Common" Version="<VERSION>" />`](https://learn.microsoft.com/en-us/visualstudio/msbuild/sdk-element-msbuild) element under the root `<Project>` element.
@@ -29,15 +29,15 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 ## Development
 
 ### Prerequisites
-- Install .NET 7.0 SDK version 7.0.100 or newer.
+- Install the .NET 7.0 SDK version 7.0.100 or newer.
 
-### Building (with Visual Studio)
+### Building with Visual Studio
 1. Open `Belp.SDK.Common.sln`.
 1. Open the Solution Explorer.
 1. Right click on the project `Belp.SDK.Common` in the Solution Explorer.
 1. Click on `Pack`.
 
-### Building (with .NET CLI)
+### Building with .NET CLI
 1. Open a terminal in the repository root.
 1. Run `dotnet pack`
 
