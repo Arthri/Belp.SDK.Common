@@ -39,4 +39,4 @@ The NuGet package will be pushed to a source named `tmp`. If the source doesn't 
 1. Run `dotnet pack`
 
 ### Output
-By default, the output is located in `src/Belp.SDK.Common/Belp.SDK.Common/bin/Release`.
+By default, the output is located in `src/Belp.SDK.Common/Belp.SDK.Common/bin/Release/`.
