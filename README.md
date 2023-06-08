@@ -23,9 +23,6 @@ It is not recommended to install Belp.SDK.Common directly.
 
 The NuGet package will be pushed to a source named `tmp`. If the source doesn't exist, create a new local NuGet source with `dotnet nuget add source <SOURCE_PATH> --name tmp`.
 
-### Output Packed Package Path to GitHub Actions
-Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases with the `-p:BELP_EXPOSE_CI_VARIABLES=true` argument.
-
 ## Development
 
 ### Prerequisites
