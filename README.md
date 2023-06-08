@@ -42,4 +42,4 @@ Run `dotnet build`, `dotnet pack`, `dotnet msbuild`, or other msbuild aliases wi
 1. Run `dotnet pack`
 
 ### Output
-The output is located in `src/Belp.SDK.Common/Belp.SDK.Common/bin/<CONFIGURATION>`.
+By default, the output is located in `src/Belp.SDK.Common/Belp.SDK.Common/bin/Release`.
