@@ -1,26 +1,19 @@
-<Project Sdk="Belp.SDK.PackOnly/0.1.0">
+<Project Sdk="Belp.SDK.PackOnly/0.4.0">
 
   <!-- Package Information -->
   <PropertyGroup>
-    <Authors>Arthri</Authors>
-    <Copyright>Copyright © 2023 Arthri</Copyright>
     <Description>The base of all Belp SDKs: contains common features shared by Belp SDKs.</Description>
     <DevelopmentDependency>true</DevelopmentDependency>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Arthri/Belp.SDK.Common/</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>msbuild;sdk</PackageTags>
     <Product>Belp</Product>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <Title>Belp Common SDK</Title>
   </PropertyGroup>
 
-
-
-  <!-- Package Assets Configuration -->
   <ItemGroup>
-    <None Include="Assets\**\*" Pack="true" PackagePath="\" />
-    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <CopyrightOwner Include="Arthri" Years="2023" />
   </ItemGroup>
 
 
