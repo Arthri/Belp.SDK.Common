@@ -1,6 +1,9 @@
 # Belp.SDK.Common
 The base of all Belp SDKs: contains common features shared by Belp SDKs.
 
+> [!IMPORTANT]
+> Remaining code has been merged with Belp.SDK.Packinf and Belp.SDK.Common discontinued.
+
 ## Installation
 It is not recommended to install Belp.SDK.Common directly.
 
